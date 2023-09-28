@@ -3,7 +3,7 @@ import java.util.Collections;
 
 class StatisticsCalculator {
 
-    public double calculateMean(List<Integer> numbers) {
+    public static double calculateMean(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
             throw new IllegalArgumentException("List cannot be null or empty");
         }
@@ -16,7 +16,7 @@ class StatisticsCalculator {
         return sum / numbers.size();
     }
 
-    public double calculateMedian(List<Integer> numbers) {
+    public static double calculateMedian(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
             throw new IllegalArgumentException("List cannot be null or empty");
         }
